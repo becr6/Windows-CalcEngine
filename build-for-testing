@@ -1,0 +1,8 @@
+# start clean
+
+cmake -S . -B build \
+      -DCMAKE_BUILD_TYPE=Debug \
+      -DBUILD_WCE_TESTING=ON   \
+      -DDOWNLOAD_GTEST=ON      \
+      -DFORCE_SINGLE_PROJECT=ON
+

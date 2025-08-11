@@ -1,4 +1,5 @@
 #include <cassert>
+#include <iostream>
 
 #include "MultiLayerScattered.hpp"
 #include "MultiLayerInterRef.hpp"
@@ -154,7 +155,7 @@ namespace MultiLayerOptics
         for(size_t i = 0u; i < m_Layers.size(); ++i)
         {
             abs.push_back(
-              getAbsorptanceLayer(minLambda, maxLambda, i, side, scattering, theta, phi));
+                getAbsorptanceLayer(minLambda, maxLambda, i+1, side, scattering, theta, phi));
         }
         return abs;
     }
@@ -236,12 +237,14 @@ namespace MultiLayerOptics
       CMultiLayerScattered::create(const SingleLayerOptics::CScatteringLayer & t_Layer)
     {
         return std::unique_ptr<CMultiLayerScattered>(new CMultiLayerScattered(t_Layer));
+        // return std::make_unique<CMultiLayerScattered>(t_Layer);
     }
 
     std::unique_ptr<CMultiLayerScattered>
       CMultiLayerScattered::create(const std::vector<SingleLayerOptics::CScatteringLayer> & layers)
     {
         return std::unique_ptr<CMultiLayerScattered>(new CMultiLayerScattered(layers));
+        // return std::make_unique<CMultiLayerScattered>(layers);
     }
 
     CMultiLayerScattered::CMultiLayerScattered(

@@ -1,0 +1,7 @@
+/Users/tgv/solar-shading/libs/Windows-CalcEngine/CMakeFiles/Windows-CalcEngine.dir
+/Users/tgv/solar-shading/libs/Windows-CalcEngine/CMakeFiles/edit_cache.dir
+/Users/tgv/solar-shading/libs/Windows-CalcEngine/CMakeFiles/rebuild_cache.dir
+/Users/tgv/solar-shading/libs/Windows-CalcEngine/CMakeFiles/list_install_components.dir
+/Users/tgv/solar-shading/libs/Windows-CalcEngine/CMakeFiles/install.dir
+/Users/tgv/solar-shading/libs/Windows-CalcEngine/CMakeFiles/install/local.dir
+/Users/tgv/solar-shading/libs/Windows-CalcEngine/CMakeFiles/install/strip.dir

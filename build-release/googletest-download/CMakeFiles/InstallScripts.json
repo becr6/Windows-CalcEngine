@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/tgv/solar-shading/libs/Windows-CalcEngine/build-release/googletest-download/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

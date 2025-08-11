@@ -172,6 +172,7 @@ namespace Tarcog::ISO15099
 
     std::vector<double> CIGU::getState() const
     {
+        /* DEBUG HACK
         std::vector<double> aState;
 
         auto layers = getSolidLayers();
@@ -184,6 +185,31 @@ namespace Tarcog::ISO15099
             aState.push_back(layer->surfaceTemperature(Side::Back));
         }
 
+        return aState;
+        */
+        std::vector<double> aState;
+
+        auto layers = getSolidLayers();
+        for(auto & layer : layers)
+        {
+            auto tF = layer->surfaceTemperature(Side::Front);
+            auto jF = layer->J(Side::Front);
+            auto jB = layer->J(Side::Back);
+            auto tB = layer->surfaceTemperature(Side::Back);
+
+            // Log if any are suspiciously large/nan
+            assert(std::isfinite(tF));
+            assert(std::isfinite(jF));
+            assert(std::isfinite(jB));
+            assert(std::isfinite(tB));
+
+            aState.push_back(tF);
+            aState.push_back(jF);
+            aState.push_back(jB);
+            aState.push_back(tB);
+        }
+
+        assert(aState.size() == 4 * layers.size());   // Sanity check
         return aState;
     }
 
@@ -586,10 +612,15 @@ namespace Tarcog::ISO15099
         std::vector<std::shared_ptr<CIGUSolidLayer>> aVect;
         for(auto const & aLayer : m_Layers)
         {
+            if (auto casted = std::dynamic_pointer_cast<CIGUSolidLayer>(aLayer)) {
+                aVect.push_back(casted);
+            }
+            /* DEBUG HACK
             if(std::dynamic_pointer_cast<CIGUSolidLayer>(aLayer) != nullptr)
             {
                 aVect.push_back(std::dynamic_pointer_cast<CIGUSolidLayer>(aLayer));
             }
+            */
         }
         return aVect;
     }

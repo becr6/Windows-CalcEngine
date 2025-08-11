@@ -1,0 +1,8 @@
+/Users/tgv/solar-shading/MPC/new/build_clean/local/lib/libWindows-CalcEngine.a
+/Users/tgv/solar-shading/MPC/new/build_clean/local/include/wce/WCECommon.hpp
+/Users/tgv/solar-shading/MPC/new/build_clean/local/include/wce/WCEGases.hpp
+/Users/tgv/solar-shading/MPC/new/build_clean/local/include/wce/WCEViewer.hpp
+/Users/tgv/solar-shading/MPC/new/build_clean/local/include/wce/WCETarcog.hpp
+/Users/tgv/solar-shading/MPC/new/build_clean/local/include/wce/WCESpectralAveraging.hpp
+/Users/tgv/solar-shading/MPC/new/build_clean/local/include/wce/WCESingleLayerOptics.hpp
+/Users/tgv/solar-shading/MPC/new/build_clean/local/include/wce/WCEMultiLayerOptics.hpp

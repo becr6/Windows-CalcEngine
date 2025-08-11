@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/tgv/solar-shading/libs/Windows-CalcEngine/googletest-download/CMakeFiles/GTestExternal"
+		},
+		{
+			"file" : "/Users/tgv/solar-shading/libs/Windows-CalcEngine/googletest-download/CMakeFiles/GTestExternal.rule"
+		},
+		{
+			"file" : "/Users/tgv/solar-shading/libs/Windows-CalcEngine/googletest-download/CMakeFiles/GTestExternal-complete.rule"
+		},
+		{
+			"file" : "/Users/tgv/solar-shading/libs/Windows-CalcEngine/googletest-download/GTestExternal-prefix/src/GTestExternal-stamp/GTestExternal-build.rule"
+		},
+		{
+			"file" : "/Users/tgv/solar-shading/libs/Windows-CalcEngine/googletest-download/GTestExternal-prefix/src/GTestExternal-stamp/GTestExternal-configure.rule"
+		},
+		{
+			"file" : "/Users/tgv/solar-shading/libs/Windows-CalcEngine/googletest-download/GTestExternal-prefix/src/GTestExternal-stamp/GTestExternal-download.rule"
+		},
+		{
+			"file" : "/Users/tgv/solar-shading/libs/Windows-CalcEngine/googletest-download/GTestExternal-prefix/src/GTestExternal-stamp/GTestExternal-install.rule"
+		},
+		{
+			"file" : "/Users/tgv/solar-shading/libs/Windows-CalcEngine/googletest-download/GTestExternal-prefix/src/GTestExternal-stamp/GTestExternal-mkdir.rule"
+		},
+		{
+			"file" : "/Users/tgv/solar-shading/libs/Windows-CalcEngine/googletest-download/GTestExternal-prefix/src/GTestExternal-stamp/GTestExternal-patch.rule"
+		},
+		{
+			"file" : "/Users/tgv/solar-shading/libs/Windows-CalcEngine/googletest-download/GTestExternal-prefix/src/GTestExternal-stamp/GTestExternal-test.rule"
+		},
+		{
+			"file" : "/Users/tgv/solar-shading/libs/Windows-CalcEngine/googletest-download/GTestExternal-prefix/src/GTestExternal-stamp/GTestExternal-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"GTestExternal"
+		],
+		"name" : "GTestExternal"
+	}
+}

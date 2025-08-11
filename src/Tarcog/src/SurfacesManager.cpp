@@ -39,12 +39,22 @@ namespace Tarcog::ISO15099
 
     double SurfacesManager::surfaceTemperature(FenestrationCommon::Side t_Position) const
     {
-        return m_Surface.at(t_Position)->getTemperature();
+        auto it = m_Surface.find(t_Position);
+        if(it == m_Surface.end() || !it->second)
+            throw std::runtime_error("Null or missing surface pointer");
+
+        return it->second->getTemperature();
+        // return m_Surface.at(t_Position)->getTemperature(); DEBUG HACK
     }
 
     double SurfacesManager::J(const FenestrationCommon::Side t_Position) const
     {
-        return m_Surface.at(t_Position)->J();
+        auto it = m_Surface.find(t_Position);
+        if(it == m_Surface.end() || !it->second)
+            throw std::runtime_error("Null or missing surface pointer");
+
+        return it->second->J();
+        // return m_Surface.at(t_Position)->J(); DEBUG HACK
     }
 
     double SurfacesManager::surfaceDeflectionMax(FenestrationCommon::Side side) const
