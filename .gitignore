@@ -37,4 +37,30 @@ Builds
 .project
 .cproject
 .idea
-.se
+.se# Build directories
+build*/
+*build*/
+cmake-build-*/
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Downloaded dependencies
+googletest-src/
+*-src/
+
+# Build artifacts
+*.o
+*.so
+*.dylib
+*.a
+*.exe
+
+# IDE files
+.vscode/
+.vs/

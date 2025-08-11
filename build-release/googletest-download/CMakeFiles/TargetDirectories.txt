@@ -1,3 +1,0 @@
-/Users/tgv/solar-shading/libs/Windows-CalcEngine/build-release/googletest-download/CMakeFiles/GTestExternal.dir
-/Users/tgv/solar-shading/libs/Windows-CalcEngine/build-release/googletest-download/CMakeFiles/edit_cache.dir
-/Users/tgv/solar-shading/libs/Windows-CalcEngine/build-release/googletest-download/CMakeFiles/rebuild_cache.dir
